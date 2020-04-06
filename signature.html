@@ -8,80 +8,78 @@
 
     <style>
         .content {
+            height: 125px;
+            width: 310px;
             display: flex;
+            overflow: hidden;
         }
         
-        .logo-img-div {
+        .logo {
             border-right: 0.04em solid rgba(123, 114, 105, 0.8);
             display: flex;
             align-items: center;
         }
         
-        .logo-img-div img {
-            height: 95px;
-        }
-        
-        .logo-img-img {
+        .logo-img {
+            height: 100px;
             margin: 0px 20px 0px 0px;
         }
         
-        .personnal-info {
-            margin: 0px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        .contact-info {
+            margin-left: 20px;
+        }
+        
+        .names {
+            margin-left: 17px;
         }
         
         .name {
-            padding-bottom: 3px;
+            padding-bottom: 4px;
         }
         
         .name span {
-            padding: 0px 0px 3px 0px;
+            padding: 0px 0px 4px 0px;
             border-bottom: 0.04em solid rgba(55, 86, 35, 0.8);
             color: rgb(55, 86, 35);
-            margin-left: 17px;
             font-family: "Calibri", sans-serif;
             font-weight: lighter;
-            font-size: 12px;
+            font-size: 13px;
             letter-spacing: 0.2px;
         }
         
         .enterprise-name {
-            margin: 7px 0px 4px 0px;
-        }
-        
-        .enterprise-name .first-letter {
-            margin-left: 17px;
+            margin: 7px 0px 11px 0px;
         }
         
         .enterprise-name span {
             color: #414141;
             font-family: "Cochin", Times, serif;
             font-weight: lighter;
-            font-size: 12px;
+            font-size: 13px;
         }
         
         .enterprise-name .and {
-            font-size: 11px;
+            font-size: 12px;
         }
         
         .address {
             display: flex;
-            margin: 3px 0px;
+            margin: 6px 0px;
         }
         
         .address img {
-            height: 10px;
-            margin-right: 8px;
+            height: 12px;
+            margin-right: 6px;
             fill: rgb(55, 86, 35);
+            display: flex;
+            align-self: center;
         }
         
         .address span {
             color: rgb(123, 114, 105);
             font-family: "Calibri", sans-serif;
             font-weight: lighter;
-            font-size: 9px;
+            font-size: 10px;
             letter-spacing: 0.5px;
             text-decoration: none !important;
         }
@@ -89,12 +87,14 @@
         .phone {
             display: flex;
             align-items: center;
-            margin: 3px 0px;
+            margin: 6px 0px;
         }
         
         .phone img {
-            height: 8px;
-            margin-right: 10px;
+            height: 10px;
+            margin-right: 8px;
+            display: flex;
+            align-self: center;
         }
         
         .phone span {
@@ -102,18 +102,20 @@
             font-family: "Calibri", sans-serif;
             font-weight: lighter;
             letter-spacing: 0.5px;
-            font-size: 9px;
+            font-size: 10px;
         }
         
         .email {
             display: flex;
             align-items: center;
-            margin: 3px 0px;
+            margin: 6px 0px;
         }
         
         .email img {
-            height: 8px;
-            margin-right: 10px;
+            height: 10px;
+            margin-right: 8px;
+            display: flex;
+            align-self: center;
         }
         
         .email span {
@@ -121,7 +123,7 @@
             font-family: "Calibri", sans-serif;
             font-weight: lighter;
             letter-spacing: 0.5px;
-            font-size: 9px;
+            font-size: 10px;
         }
         
         .email a {
@@ -129,7 +131,7 @@
             font-family: "Calibri", sans-serif;
             font-weight: lighter;
             letter-spacing: 0.5px;
-            font-size: 9px;
+            font-size: 10px;
             text-decoration: none !important;
         }
     </style>
@@ -138,19 +140,21 @@
 
 <body>
     <div class="content">
-        <div class="logo-img-div">
-            <img src="https://www.al-built.be/assets/al-built.svg" alt="logo entreprise" class="logo-img-img">
+        <div class="logo">
+            <img src="https://www.al-built.be/assets/al-built.svg" alt="logo entreprise" class="logo-img">
         </div>
-        <div class="personnal-info">
-            <div class="name">
-                <span>Loïc Lauwers</span>
-            </div>
-            <div class="enterprise-name">
-                <span class="first-letter">A</span><span class="and">&</span><span>L IMMO</span>
+        <div class="contact-info">
+            <div class="names">
+                <div class="name">
+                    <span>Loïc Lauwers</span>
+                </div>
+                <div class="enterprise-name">
+                    <span class="first-letter">A</span><span class="and">&</span><span>L IMMO</span>
+                </div>
             </div>
             <div class="address">
                 <img src="https://www.al-built.be/assets/position.svg" alt="address">
-                <span>Rue de la procession, 61<br>B-1310 La Hulpe</span>
+                <span>Rue de la Procession, 61<br>B-1310 La Hulpe</span>
             </div>
             <div class="phone">
                 <img src="https://www.al-built.be/assets/phone.svg" alt="phone">
